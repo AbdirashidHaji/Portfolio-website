@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Abdirashid - Portfolio</title>
 </head>
-<body class="bg-gray-100">
+<body class="bg-white dark:bg-black">
 
     <!-- Navbar -->
     <nav class="bg-gray-800 p-4 text-white fixed w-full z-50">
@@ -17,12 +17,12 @@
         <div>
           <span class="text-lg font-bold">Abdirashid Haji</span>
         </div>
-        <div class="lg:hidden"> <!-- Hide on lg screens -->
+        <div class="lg:hidden">
           <button id="mobileMenuButton" class="text-white focus:outline-none">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
           </button>
         </div>
-        <div class="hidden lg:flex space-x-5"> <!-- Show on lg screens -->
+        <div class="hidden lg:flex space-x-5">
           <a href="#home" class="hover:text-gray-300">Home</a>
           <a href="#about" class="hover:text-gray-300">About Me</a>
           <a href="#portfolio" class="hover:text-gray-300">Portfolio/Work</a>
@@ -32,49 +32,43 @@
     </nav>
   
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="lg:hidden hidden">
-      <a href="#home" class="block py-2 px-4 bg-gray-700 hover:bg-gray-600 text-white">Home</a>
-      <a href="#about" class="block py-2 px-4 bg-gray-700 hover:bg-gray-600 text-white">About Me</a>
-      <a href="#portfolio" class="block py-2 px-4 bg-gray-700 hover:bg-gray-600 text-white">Portfolio/Work</a>
-      <a href="#contact" class="block py-2 px-4 bg-gray-700 hover:bg-gray-600 text-white">Contact Us</a>
+    <div id="mobileMenu" class="lg:hidden hidden bg-gray-800">
+      <a href="#home" class="block py-2 px-4  text-white">Home</a>
+      <a href="#about" class="block py-2 px-4  text-white">About Me</a>
+      <a href="#portfolio" class="block py-2 px-4  text-white">Portfolio/Work</a>
+      <a href="#contact" class="block py-2 px-4  text-white">Contact Us</a>
     </div>
-    <!-- Hero Section -->
-<header id="home" class="bg-blue-500 text-white text-center py-20 relative">
-  <div class="container mx-auto flex items-center">
-    <div class="w-1/2">
-      <p class="uppercase tracking-loose">Hi there! I'm Abdirashid
-        <br />
-      <img src="images/hero.jpg" alt="Your Name" class="w-1/2 h-full mx-auto mb-4 border-4 border-white">
+<!-- Hero Section -->
+<section class="hero bg-blue-500 text-white py-20">
+  <div class="container mx-auto flex flex-col lg:flex-row items-center">
+    <div class="w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-center lg:justify-start lg:pl-12">
+      <img src="images/hero.jpg" alt="Your Image" class="w-2/3 lg:w-1/2 h-auto rounded-lg">
     </div>
-    <div class="w-1/2 text-left pr-8">
-      <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
-      <p class="text-lg mt-4">I am a passionate web developer with a focus on creating modern and responsive web applications. My skills include HTML, CSS, JavaScript, and various web development frameworks.</p>
+    <div class="w-full lg:w-1/2 lg:pl-8">
+      <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+      <p class="text-lg mb-4">I am a passionate web developer with a focus on creating modern and responsive web applications. My skills include HTML, CSS, JavaScript, and various web development frameworks.</p>
+      <button class="bg-white text-blue-500 py-2 px-4 rounded-lg shadow-lg items-center">Contact Me</button>
     </div>
   </div>
-</header>
+</section>
 
-   <!-- About Me Section -->
+<!-- about us section -->
 <section id="about" class="py-16 about-me-container">
-  <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center">
-    <div class="lg:w-1/3 lg:pr-8 mb-4 lg:mb-0">
-      <img src="images/hero.jpg" alt="Your Name" class="rounded-full w-48 h-48 lg:w-full lg:h-full object-cover border-4 border-blue-500">
-    </div>
-    <div class="lg:w-2/3 lg:pl-8 lg:text-left">
-      <h2 class="text-3xl font-bold mb-6">About Me</h2>
-      <p class="text-gray-700 mb-4">I am a passionate web developer with a focus on creating modern and responsive web applications. My skills include HTML, CSS, JavaScript, and various web development frameworks.</p>
-      <p class="text-gray-700 mb-4">In addition to my technical skills, I am dedicated to delivering high-quality solutions and collaborating with cross-functional teams to achieve project goals. I am always eager to learn and stay up-to-date with the latest web development trends.</p>
-      <div class="mt-8">
-        <h3 class="text-2xl font-bold mb-4">Experience</h3>
-        <div class="mb-4">
-          <h4 class="text-lg font-bold">Web Developer at QY tech Company</h4>
-          <p class="text-gray-700"></p>
-          <p class="text-gray-500">Dec 2023 - Present</p>
+  <div class="container text-center mx-auto px-4">
+    <h2 class="text-3xl font-semibold text-center mb-6">About Me</h2>
+    <div class="flex flex-wrap -mx-4">
+      <div class="w-full md:w-1/2 px-4 md:pr-8">
+        <div class="text-lg text-gray-700 mb-8">
+          <p>Hi, <strong style="color: red;"> I'm Abdirashid Mohamed Haji </strong>. I currently work as a graphics designer at a global tech company, and I'm also studying full-stack development at the Institute of Software Technologies.
+          <br>
+          <strong>Graphics Designer at Global Tech Company</strong>
+          <br>
+          As a graphics designer at a leading global tech company, I am responsible for creating visually appealing designs for various digital and print media. This includes designing user interfaces, marketing materials, branding assets, and more. I collaborate closely with cross-functional teams including product managers, marketers, and developers to ensure the visual identity aligns with the company's objectives and resonates with our target audience.</p>
         </div>
-        <div class="mb-4">
-          <h4 class="text-lg font-bold">Graphic Designer at Mongo Agency</h4>
-          <p class="text-gray-700">.</p>
-          <p class="text-gray-500">January 2023 - Nov 2023</p>
-        </div>
+        <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">About Me</button>
+      </div>
+      <div class="w-full md:w-1/2 px-4 flex justify-center items-center">
+        <img src="/images/Abdi.jpeg" alt="Abdirashid Mohamed Haji" class=" h-64 w-auto">
       </div>
     </div>
   </div>
@@ -88,19 +82,19 @@
         <div class="project-card p-6">
           <h3 class="text-xl font-bold mb-4">Oramia clone</h3>  
           <img src="images/Oramia Clone.png"alt="Screenshot of the project."class="w-full h-96 rounded shadow-md mb-4"/>
-          <p class="text-gray-700 mb-4">Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="text-gray-700 mb-4"></p>
           <a href="#" class="text-blue-500 hover:underline">View Project</a>
         </div>
         <div class="project-card p-6">
           <h3 class="text-xl font-bold mb-4">landing pag</h3>
           <img src="images/landing page.png"alt="Screenshot of the project."class="w-full h-96 rounded shadow-md mb-4"/>
-          <p class="text-gray-700 mb-4">Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="text-gray-700 mb-4"></p>
           <a href="#" class="text-blue-500 hover:underline">View Project</a>
         </div>
         <div class="project-card p-6">
           <h3 class="text-xl font-bold mb-4">netflex clone</h3>
           <img src="images/netflex clone.png"alt="Screenshot of the project."class="w-full h-96 rounded shadow-md mb-4"/>
-          <p class="text-gray-700 mb-4">Description of Project 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="text-gray-700 mb-4"></p>
           <a href="#" class="text-blue-500 hover:underline">View Project</a>
         </div>
       </div>
@@ -108,29 +102,29 @@
   </section>
 
      <!-- Contact Us Section -->
-  <section id="contact" class="py-16 contact-container">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-      <div class="contact-form">
-        <form>
-          <div class="mb-4">
-            <input type="text" name="name" placeholder="Your Name" class="form-input" required>
-          </div>
-          <div class="mb-4">
-            <input type="email" name="email" placeholder="Your Email" class="form-input" required>
-          </div>
-          <div class="mb-4">
-            <input type="text" name="subject" placeholder="Subject" class="form-input" required>
-          </div>
-          <div class="mb-4">
-            <textarea name="message" placeholder="Your Message" class="form-input form-textarea" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="form-submit">Send Message</button>
-        </form>
+     <section id="contact" class="py-16 contact-container">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+        <div class="contact-form">
+          <form>
+            <div class="mb-4">
+              <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+            </div>
+            <div class="mb-4">
+              <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+            </div>
+            <div class="mb-4">
+              <input type="text" name="subject" placeholder="Subject" class="form-input" required>
+            </div>
+            <div class="mb-4">
+              <textarea name="message" placeholder="Your Message" class="form-input form-textarea" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Message</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
-  
+    </section>
+    
 
     <!-- footer -->
     <footer class="bg-gray-900 text-gray-200">
