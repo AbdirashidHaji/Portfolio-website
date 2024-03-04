@@ -2,6 +2,14 @@
 #mobileMenu {
   background-color: rgb(17 24 39);
   }
+  /* nav */
+  nav a{
+    margin-right: 50px;
+  }
+  .abdi{
+    margin-right: 100px;
+  }
+
   /* About Me styles */
   .about-me-container {
     background-color: #f8fafc;
