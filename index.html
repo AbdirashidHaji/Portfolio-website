@@ -42,47 +42,39 @@
     </div>
     </nav>
 <!-- Hero Section -->
-<section class="hero bg-blue-500 text-white py-20">
+<section class="bg-gray-800 text-white py-20">
   <div class="container mx-auto flex flex-col lg:flex-row items-center">
     <div class="w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-center lg:justify-start lg:pl-12">
-      <img src="images/hero.jpg" alt="" class="w-2/3 lg:w-1/2 h-auto rounded-lg">
+      <img src="images/hero.jpg" alt="Hero" class="w-2/3 lg:w-1/2 h-auto rounded-lg shadow-xl">
     </div>
-    <div class="w-full lg:pl-8 sm:ml-10">
-      <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
-      <p class="text-lg mb-4">I am a passionate web developer with a focus on creating modern and responsive web applications. My skills include HTML, CSS, JavaScript, and various web development<br>
-         frameworks.</p>
-      <div class="cont">
-      <button class="bg-white text-blue-500 py-2 px-4 rounded-lg shadow-lg justify-center;items-center">Contact Me</button>
-    </div>
+    <div class="w-full lg:w-1/2 lg:pl-8 text-center lg:text-left">
+      <h1 class="text-5xl font-extrabold mb-4">Welcome to My Awesome Portfolio</h1>
+      <p class="text-lg mb-6">I am a creative and innovative Software developer specializing in building stunning and responsive web applications. Let's turn your ideas into reality!</p>
+      <button class="bg-white text-indigo-600 hover:bg-indigo-600 hover:text-white py-3 px-6 rounded-full font-bold shadow-lg inline-block transition duration-300">Contact Me</button>
     </div>
   </div>
 </section>
 
-<!-- about us section -->
-<section id="about" class="py-16 about-me-container">
-  <div class="container text-center mx-auto px-4">
-    <h2 class="text-3xl font-semibold text-center mb-6">About Me</h2>
-    <div class="flex flex-wrap -mx-4">
-      <div class="w-full md:w-1/2 px-4 md:pr-8">
-        <div class="text-lg text-gray-700 mb-8">
-          <p>Hi, <strong style="color: red;"> I'm Abdirashid Mohamed Haji </strong>. I am currently working as a graphics designer at a global tech company, and I'm also studying full-stack development at the Institute of Software Technologies.
-          <br>
-          <strong>Graphics Designer at Global Tech Company</strong>
-          <br>
-          As a graphics designer at a leading global tech company, I am responsible for creating visually and more. I collaborate closely with cross-functional teams including product managers, marketers, and developers to ensure the visual identity aligns with the company's objectives and resonates with our target audience.</p>
-        </div>
-        <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">About Me</button>
+<!-- About Me Section -->
+<section id="about" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="text-lg text-gray-800">
+        <p>Hello, <strong style="color: red;">I'm Abdirashid Mohamed Haji</strong>. I'm a passionate Software developer with a keen interest in graphics designer. Currently, I'm working at a global tech company as a graphics designer, while also pursuing full-stack development at the Institute of Software Technologies.</p>
+        <br>
+        <p>At my current role, I'm responsible for creating visually appealing designs that align with our company's objectives and resonate with our target audience. I collaborate closely with cross-functional teams including product managers, marketers, and developers to ensure the visual identity of our products and services.</p>
       </div>
-      <div class="w-full md:w-1/2 px-4 flex justify-center items-center">
-        <!-- <img src="/images/hero.jpg" alt="Abdirashid Mohamed Haji" class=" h-64 w-auto"> -->
-        <video class="h-64 w-auto" controls>
-          <source src="/video/about me.mp4" type="video/mp4">
+      <div class="aspect-w-16 aspect-h-9">
+        <video class="w-full h-full object-cover" controls muted>
+          <source src="/video/portfolio.mp4" type="video/mp4">
         </video>
-        
       </div>
     </div>
   </div>
 </section>
+
+
 
   <!-- Projects Section -->
   <section id="portfolio" class="py-16 bg-indigo-200">

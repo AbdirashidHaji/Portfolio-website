@@ -9,11 +9,7 @@
   .abdi{
     margin-right: 100px;
   }
-/* hero */
-.cont{
-  justify-content: center;
-  display: flex;
-}
+
   /* About Me styles */
   .about-me-container {
     background-color: #f8fafc;
@@ -31,8 +27,9 @@
   .project-card:hover {
     transform: translateY(-5px);
   }
-
+ 
   /* Contact Us styles */
+  
   .contact-container {
     background-color: #ede9fe;
   }
@@ -78,4 +75,4 @@
     padding-top: 20px;
     text-align: center;
     padding-bottom: 20px;
-  }
+  } 
