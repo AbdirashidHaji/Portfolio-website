@@ -7,7 +7,7 @@ This project represents a portfolio website for Me, Abdirashid Haji, a web devel
 Features
 Navbar: A responsive navigation bar with links to different sections of the website.
 Hero Section: A prominent section introducing Me and My skills.
-About Me Section: Provides information about Abdirashid, his current role, and background.
+About Me Section: Provides information about Me, My current role, and background.
 Projects Section: Showcases some of My projects with links to view them.
 Contact Us Section: A form for visitors to contact Me.
 Footer: Contains links to social media profiles, important links, and a newsletter subscription form.
