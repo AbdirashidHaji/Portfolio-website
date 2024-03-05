@@ -9,7 +9,11 @@
   .abdi{
     margin-right: 100px;
   }
-
+/* hero */
+.cont{
+  justify-content: center;
+  display: flex;
+}
   /* About Me styles */
   .about-me-container {
     background-color: #f8fafc;
