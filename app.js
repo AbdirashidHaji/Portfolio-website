@@ -18,3 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenu.classList.toggle('hidden');
   });
 });
+
+  document.getElementById('show-more').addEventListener('click', function() {
+    const additionalProjects = document.getElementById('additional-projects');
+    if (additionalProjects.classList.contains('hidden')) {
+      additionalProjects.classList.remove('hidden');
+      this.textContent = 'Show Less Projects';
+    } else {
+      additionalProjects.classList.add('hidden');
+      this.textContent = 'Show More Projects';
+    }
+  });
